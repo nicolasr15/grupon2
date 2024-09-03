@@ -123,9 +123,9 @@
             </div>
           </div>
 
-          <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
-            <form action="forms/quote.php" method="post" class="php-email-form">
-              <h3>Contactanos</h3>
+          <div class="col-lg-5">
+            <form name="contact-index" data-netlify="true" method="POST" class="php-email-form">
+              <h3>Contáctanos</h3>
               <div class="row gy-3">
 
                 <div class="col-12">
@@ -146,15 +146,41 @@
 
                 <div class="col-12 text-center">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
                   <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
 
-                  <button type="submit">Get a quote</button>
+                  <button type="submit">Enviar</button>
                 </div>
 
               </div>
             </form>
           </div><!-- End Quote Form -->
+
+          <!-- New Form section -->
+          <!-- <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
+          <form name="contact" netlify class="php-email-form">
+            <h3>Contactanos</h3>
+            <div class="row gy-3">
+
+            <div class="col-12">
+              <input type="text" name="name" class="form-control" placeholder="Nombre" required="">
+            </div>
+            <div class="col-12 ">
+              <input type="email" class="form-control" name="email" placeholder="Email" required="">
+            </div>
+
+            <div class="col-12">
+              <input type="text" class="form-control" name="phone" placeholder="Telefono" required="">
+            </div>
+
+            <div class="col-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
+            </div>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+          </div> -->
+           <!-- End New Form Section -->
 
         </div>
 

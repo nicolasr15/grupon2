@@ -125,7 +125,7 @@
           </div>
 
           <div class="col-lg-5">
-            <form method="post" role="form" class="php-email-form" name="contact" netlify data-netlify="true" action="#alt-services">
+            <form method="post" role="form" class="php-email-form" name="contact" netlify data-netlify="true" action="#" onsubmit="location.reload();">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
@@ -154,7 +154,8 @@
           </div>
           <!-- End Quote Form https://www.youtube.com/watch?v=WceGUOTMDoM-->
         </div>
-        <script>
+
+        <!-- <script>
           function refreshPage(event) {
               event.preventDefault(); // Evita que el formulario se envíe automáticamente
               setTimeout(function() {
@@ -162,7 +163,7 @@
               }, 2000);
               document.forms["contact"].submit(); // Enviar el formulario después de detener el evento por defecto
           }
-      </script>
+      </script> -->
       </div>
 
     </section><!-- /Get Started Section -->

@@ -125,7 +125,7 @@
           </div>
 
           <div class="col-lg-5">
-            <form method="post" role="form" class="php-email-form" name="contact" netlify data-netlify="true" action="/">
+            <form method="post" role="form" class="php-email-form" name="contact" netlify data-netlify="true" action="#alt-services">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
@@ -144,7 +144,7 @@
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Mensaje enviado, pronto nos pondremos en contacto contigo!</div>
               </div>
               <div class="text-center">
                 <br>
@@ -153,36 +153,16 @@
             </form>
           </div>
           <!-- End Quote Form https://www.youtube.com/watch?v=WceGUOTMDoM-->
-
-          <!-- New Form section -->
-          <!-- <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
-          <form name="contact" netlify class="php-email-form">
-            <h3>Contactanos</h3>
-            <div class="row gy-3">
-
-            <div class="col-12">
-              <input type="text" name="name" class="form-control" placeholder="Nombre" required="">
-            </div>
-            <div class="col-12 ">
-              <input type="email" class="form-control" name="email" placeholder="Email" required="">
-            </div>
-
-            <div class="col-12">
-              <input type="text" class="form-control" name="phone" placeholder="Telefono" required="">
-            </div>
-
-            <div class="col-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
-            </div>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
-          </div> -->
-           <!-- End New Form Section -->
-
         </div>
-
+        <script>
+          function refreshPage(event) {
+              event.preventDefault(); // Evita que el formulario se envíe automáticamente
+              setTimeout(function() {
+                  location.reload(); // Recarga la página después de 2 segundos
+              }, 2000);
+              document.forms["contact"].submit(); // Enviar el formulario después de detener el evento por defecto
+          }
+      </script>
       </div>
 
     </section><!-- /Get Started Section -->

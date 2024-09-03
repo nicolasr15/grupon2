@@ -92,7 +92,7 @@
   /**
    * Animation on scroll function and init
    */
- /*  function aosInit() {
+  function aosInit() {
     AOS.init({
       duration: 600,
       easing: 'ease-in-out',
@@ -100,7 +100,7 @@
       mirror: false
     });
   }
-  window.addEventListener('load', aosInit); */
+  window.addEventListener('load', aosInit);
 
   /**
    * Initiate glightbox
